@@ -5,7 +5,7 @@ MPU6050 mpu6050(Wire);
 void setup() {
   Serial.begin(57600);
   Wire.begin();
-  mpu6050.begin();
+  mpu6050.begin(50);
   mpu6050.calcGyroOffsets(true);
 }
 
